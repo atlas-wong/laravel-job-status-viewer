@@ -3,7 +3,7 @@ namespace AtlasWong\LaravelJobStatusViewer;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelJobStatusServiceProvider extends ServiceProvider {
+class LaravelJobStatusViewerServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
