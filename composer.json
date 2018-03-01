@@ -1,0 +1,26 @@
+{
+    "name": "atlas-wong/laravel-job-status-viewer",
+    "description": "A Laravel Job Status reader",
+    "license": "MIT",
+    "keywords": ["job-status", "job-status-reader", "job-status-viewer", "laravel", "lumen"],
+    "authors": [
+        {
+            "name": "Atlas Wong",
+            "email": "atlas.wong.times@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "4.2.*|5.*",
+        "imtigger/laravel-job-status": "^0.1.13"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "AtlasWong\\LaravelJobStatusViewer\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
