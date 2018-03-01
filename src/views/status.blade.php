@@ -64,45 +64,31 @@
         </div>
         <div class="col-sm-9 col-md-10 table-container">
 
-                <table id="table-log" class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Status</th>
-                        <th>Input</th>
-                        <th>Output</th>
-                        <th>Date</th>
-                        <th>Action</th>
+            <table id="table-log" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Input</th>
+                    <th>Output</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                @foreach($job_statuses as $key => $job_status)
+                    <tr data-display="stack{{$key}}">
+                        <td class="text"><span class="glyphicon" aria-hidden="true"></span> &nbsp;{{$job_status['type']}}</td>
+                        <td class="text">{{$job_status['status']}}</td>
+                        <td class="text">{{json_encode($job_status['input'])}}</td>
+                        <td class="text">{{json_encode($job_status['output'])}}</td>
+                        <td class="date">{{{$job_status['updated_at']}}}</td>
+                        <td class="text">@if ($job_status['status'] == 'failed')<a href="?rq={{base64_encode($job_status['id'])}}">Retry</a>@endif</td>
                     </tr>
-                    </thead>
-                    <tbody>
-
-                    @foreach($job_statuses as $key => $job_status)
-                        <tr data-display="stack{{$key}}">
-                            <td class="text"><span class="glyphicon" aria-hidden="true"></span> &nbsp;{{$job_status['type']}}</td>
-                            <td class="text">{{$job_status['status']}}</td>
-                            <td class="text">{{json_encode($job_status['input'])}}</td>
-                            <td class="text">{{json_encode($job_status['output'])}}</td>
-                            <td class="date">{{{$job_status['updated_at']}}}</td>
-                            <td class="text"><a href="?rq={{base64_encode($job_status['id'])}}">Retry</a></td>
-                        </tr>
-                    @endforeach
-
-                    </tbody>
-                </table>
-            <div>
-                {{--@if($current_file)--}}
-                    {{--<a href="?dl={{ base64_encode($current_file) }}"><span class="glyphicon glyphicon-download-alt"></span>--}}
-                        {{--Download file</a>--}}
-                    {{-----}}
-                    {{--<a id="delete-log" href="?del={{ base64_encode($current_file) }}"><span--}}
-                                {{--class="glyphicon glyphicon-trash"></span> Delete file</a>--}}
-                    {{--@if(count($files) > 1)--}}
-                        {{-----}}
-                        {{--<a id="delete-all-log" href="?delall=true"><span class="glyphicon glyphicon-trash"></span> Delete all files</a>--}}
-                    {{--@endif--}}
-                {{--@endif--}}
-            </div>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -126,7 +112,7 @@
                 if (data) data.start = 0;
                 return data;
             },
-            "searchDelay": "{{empty($config['seach_delay'])?500:$config['seach_delay']}}"
+            "searchDelay": "{{empty($config['seach_delay'])??500}}"
         });
         $('#delete-log, #delete-all-log').click(function () {
             return confirm('Are you sure?');

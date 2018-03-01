@@ -16,10 +16,13 @@ class LaravelJobStatusViewerHelper
     private static $type;
     
     /**
-     * @param array|object|null $type
+     * @param string $type
      */
     public static function setType($type)
     {
+        if (!empty($type)) {
+            $type = json_decode($type, true);
+        }
         self::$type = $type['type']??$type->type??null;
     }
     
@@ -28,8 +31,6 @@ class LaravelJobStatusViewerHelper
      */
     public static function all()
     {
-        $job_statuses = [];
-        
         if (isset(self::$type) && !empty(self::$type)) {
             $job_statuses = JobStatus::where('type', self::$type)->orderBy('status', 'desc')->orderBy('updated_at', 'desc')->get()->toArray();
         } else {
@@ -68,7 +69,7 @@ class LaravelJobStatusViewerHelper
      */
     public static function getConfigs()
     {
-        return config('laravel-log-viewer');
+        return config('laravel-job-status-viewer');
     }
     
     /**
@@ -76,15 +77,17 @@ class LaravelJobStatusViewerHelper
      */
     public static function requeue($id)
     {
-        $input = JobStatus::find($id)->input??null;
-        $class = JobStatus::find($id)->type??null;
+        $entity = JobStatus::find($id);
+        $input = $entity->input??null;
+        $class = $entity->type??null;
         // create new job instance
         // dispatch with params
         if (class_exists($class)) {
             dispatch(new $class($input));
-            return [];
+            $entity->status = 'finished';
+            $entity->save();
         } else {
-            return [];
+            return ['success' => false, 'message' => 'Job Class not find'];
         }
     }
 }
