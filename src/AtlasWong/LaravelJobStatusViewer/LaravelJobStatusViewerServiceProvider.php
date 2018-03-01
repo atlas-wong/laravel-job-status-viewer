@@ -3,7 +3,7 @@ namespace AtlasWong\LaravelJobStatusViewer;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelJobStatusServiceProvider extends ServiceProvider {
+class LaravelJobStatusViewerServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -20,11 +20,11 @@ class LaravelJobStatusServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		if (method_exists($this, 'package')) {
-			$this->package('atlas-wong/laravel-job-status-viewer', 'laravel-job-status-viewer', __DIR__ . '/../../');
+			$this->package('atlas-wong/laravel-job-status-viewer', 'laravel-job-status-viewer', __DIR__ . '/../src/');
 		}
 
 		if (method_exists($this, 'loadViewsFrom')) {
-			$this->loadViewsFrom(__DIR__.'/../../views', 'laravel-job-status-viewer');
+			$this->loadViewsFrom(__DIR__ . '/../../views', 'laravel-job-status-viewer');
 		}
         
         if (method_exists($this, 'publishes')) {

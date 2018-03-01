@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel log viewer</title>
+    <title>Laravel Job Status viewer</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -51,23 +51,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Laravel Log Viewer</h1>
+            <h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Laravel Job Status Viewer</h1>
             <p class="text-muted"><i>by Atlas Wong</i></p>
             <div class="list-group">
-                @foreach($job_statuses as $job_status)
+                @foreach($types as $job_status)
                     <a href="?l={{ base64_encode($job_status) }}"
-                       class="list-group-item @if ($current_file == $job_status) llv-active @endif">
-                        {{$file}}
+                       class="list-group-item">
+                        {{$job_status['type']}}
                     </a>
                 @endforeach
             </div>
         </div>
         <div class="col-sm-9 col-md-10 table-container">
-            @if ($job_statuses === null)
-                <div>
-                    Log file {{empty($config['max_file_size'])?"oversized":("over " . ($config['max_file_size']/1048576) . "MB")}}, please download it.
-                </div>
-            @else
+
                 <table id="table-log" class="table table-striped">
                     <thead>
                     <tr>
@@ -76,45 +72,36 @@
                         <th>Input</th>
                         <th>Output</th>
                         <th>Date</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
 
                     @foreach($job_statuses as $key => $job_status)
-                        <tr data-display="stack{{{$key}}}">
-                            <td class="text-{{{$log['level_class']}}}"><span class="glyphicon glyphicon-{{{$log['level_img']}}}-sign"
-                                                                             aria-hidden="true"></span> &nbsp;{{$log['level']}}</td>
-                            <td class="text">{{$log['context']}}</td>
-                            <td class="date">{{{$log['date']}}}</td>
-                            <td class="text">
-                                @if ($log['stack']) <a class="pull-right expand btn btn-default btn-xs"
-                                                       data-display="stack{{{$key}}}"><span
-                                            class="glyphicon glyphicon-search"></span></a>@endif
-                                {{{$log['text']}}}
-                                @if (isset($log['in_file'])) <br/>{{{$log['in_file']}}}@endif
-                                @if ($log['stack'])
-                                    <div class="stack" id="stack{{{$key}}}"
-                                         style="display: none; white-space: pre-wrap;">{{{ trim($log['stack']) }}}
-                                    </div>@endif
-                            </td>
+                        <tr data-display="stack{{$key}}">
+                            <td class="text"><span class="glyphicon" aria-hidden="true"></span> &nbsp;{{$job_status['type']}}</td>
+                            <td class="text">{{$job_status['status']}}</td>
+                            <td class="text">{{json_encode($job_status['input'])}}</td>
+                            <td class="text">{{json_encode($job_status['output'])}}</td>
+                            <td class="date">{{{$job_status['updated_at']}}}</td>
+                            <td class="text"><a href="?rq={{base64_encode($job_status['id'])}}">Retry</a></td>
                         </tr>
                     @endforeach
 
                     </tbody>
                 </table>
-            @endif
             <div>
-                @if($current_file)
-                    <a href="?dl={{ base64_encode($current_file) }}"><span class="glyphicon glyphicon-download-alt"></span>
-                        Download file</a>
-                    -
-                    <a id="delete-log" href="?del={{ base64_encode($current_file) }}"><span
-                                class="glyphicon glyphicon-trash"></span> Delete file</a>
-                    @if(count($files) > 1)
-                        -
-                        <a id="delete-all-log" href="?delall=true"><span class="glyphicon glyphicon-trash"></span> Delete all files</a>
-                    @endif
-                @endif
+                {{--@if($current_file)--}}
+                    {{--<a href="?dl={{ base64_encode($current_file) }}"><span class="glyphicon glyphicon-download-alt"></span>--}}
+                        {{--Download file</a>--}}
+                    {{-----}}
+                    {{--<a id="delete-log" href="?del={{ base64_encode($current_file) }}"><span--}}
+                                {{--class="glyphicon glyphicon-trash"></span> Delete file</a>--}}
+                    {{--@if(count($files) > 1)--}}
+                        {{-----}}
+                        {{--<a id="delete-all-log" href="?delall=true"><span class="glyphicon glyphicon-trash"></span> Delete all files</a>--}}
+                    {{--@endif--}}
+                {{--@endif--}}
             </div>
         </div>
     </div>

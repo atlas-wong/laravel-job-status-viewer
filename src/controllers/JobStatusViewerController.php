@@ -18,21 +18,22 @@ class JobStatusViewerController extends BaseController
     public function index()
     {
         if (Request::input('l')) {
-            LaravelJobStatusViewer::setType(base64_decode(Request::input('l')));
+            LaravelJobStatusViewerHelper::setType(base64_decode(Request::input('l')));
         }
     
         if (Request::input('rq')) {
-            LaravelJobStatusViewer::requeue(base64_decode(Request::input('rq')));
+            $result = LaravelJobStatusViewerHelper::requeue(base64_decode(Request::input('rq')));
             return $this->redirect(Request::url());
         }
         
-        $job_statuses = LaravelJobStatusViewer::all();
+        $job_statuses = LaravelJobStatusViewerHelper::all();
 
+//        return json_encode($result??$job_statuses);
         return View::make('laravel-job-status-viewer::status', [
-            'job_status' => $job_statuses,
-            'types' => LaravelJobStatusViewer::getTypes(),
-            'current_type' => LaravelJobStatusViewer::getTypeName(),
-            'config' => LaravelJobStatusViewer::getConfigs(),
+            'job_statuses' => $job_statuses,
+            'types' => LaravelJobStatusViewerHelper::getTypes(),
+            'current_type' => LaravelJobStatusViewerHelper::getTypeName(),
+            'config' => LaravelJobStatusViewerHelper::getConfigs(),
         ]);
     }
 
