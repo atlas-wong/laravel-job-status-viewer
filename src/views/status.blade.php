@@ -84,7 +84,7 @@
                             <td class="text">{{json_encode($job_status['input'])}}</td>
                             <td class="text">{{json_encode($job_status['output'])}}</td>
                             <td class="date">{{{$job_status['updated_at']}}}</td>
-                            <td class="text"><a href="?rq={{base64_encode($job_status['id'])}}">Retry</a></td>
+                            <td class="text">>@if($job_status['status'] == 'failed')<a href="?rq={{base64_encode($job_status['id'])}}">Retry</a>@endif</td>
                         </tr>
                     @endforeach
 
