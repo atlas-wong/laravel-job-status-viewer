@@ -18,7 +18,7 @@ Install (Laravel)
 -----------------
 Install via composer
 ```
-composer require atlas-wong/laravel-log-viewer
+composer require atlas-wong/laravel-job-status-viewer
 ```
 
 Add Service Provider to `config/app.php` in `providers` section
