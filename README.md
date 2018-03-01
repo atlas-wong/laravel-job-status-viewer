@@ -1,7 +1,7 @@
 Laravel 5 Job Status Viewer
 ======================
 
-[![Packagist](https://img.shields.io/packagist/v/atlas-wong/laravel-job-status-viewer.svg)]()
+[![Packagist](https://img.shields.io/packagist/v/atlas-wong/laravel-job-status-viewer.svg)()
 
 TL;DR
 -----
