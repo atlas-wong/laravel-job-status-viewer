@@ -38,7 +38,7 @@ Go to `http://myapp/job-status-viewer` or some other route
 php artisan vendor:publish --provider="AtlasWong\LaravelJobStatusViewer\LaravelJobStatusViewerServiceProvider" --tag=config
 ``` 
 
-**Optionally** publish `log.blade.php` into `/resources/views/vendor/laravel-job-status-viewer/` for view customization:
+**Optionally** publish `status.blade.php` into `/resources/views/vendor/laravel-job-status-viewer/` for view customization:
 
 ```
 php artisan vendor:publish --provider="AtlasWong\LaravelJobStatusViewer\LaravelJobStatusViewerServiceProvider" --tag=views
