@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1d82eff-5b27-45d0-ab4c-241ae8cd690b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AtlasWong/LaravelJobStatusViewer/LaravalJobStatusViewer.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AtlasWong/LaravelJobStatusViewer/LaravelJobStatusViewerServiceProvider.php" afterPath="$PROJECT_DIR$/src/AtlasWong/LaravelJobStatusViewer/LaravelJobStatusViewerServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/laravel-job-status-viewer.php" afterPath="$PROJECT_DIR$/src/config/laravel-job-status-viewer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/JobStatusViewerController.php" afterPath="$PROJECT_DIR$/src/controllers/JobStatusViewerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/status.blade.php" afterPath="$PROJECT_DIR$/src/views/status.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +29,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="885">
               <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding />
+              <folding>
+                <marker date="1519873085508" expanded="true" signature="4059:4077" ph="..." />
+                <marker date="1519873085508" expanded="true" signature="4059:4092" ph="..." />
+                <marker date="1519873085508" expanded="true" signature="4059:4103" ph="..." />
+                <marker date="1519873085508" expanded="true" signature="4059:4110" ph="..." />
+                <marker date="1519873085508" expanded="true" signature="4478:5358" ph="..." />
+                <marker date="1519873085508" expanded="true" signature="4514:5347" ph="{...}" />
+                <marker date="1519873085508" expanded="true" signature="4573:4639" ph="{...}" />
+                <marker date="1519873085508" expanded="true" signature="4676:5220" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
+                <marker date="1519873085508" expanded="true" signature="4802:4897" ph="{...}" />
+                <marker date="1519873085508" expanded="true" signature="4952:5119" ph="{...}" />
+                <marker date="1519873085508" expanded="true" signature="5283:5339" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,18 +52,18 @@
             <state relative-caret-position="15">
               <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
               <folding>
-                <marker date="1519868250830" expanded="true" signature="606:654" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="606:1064" ph="{...}" />
-                <marker date="1519868250830" expanded="true" signature="713:1060" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="743:888" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="744:877" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="925:1049" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="926:1039" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
-                <marker date="1519868250830" expanded="true" signature="1159:1305" ph="{...}" />
-                <marker date="1519868250830" expanded="true" signature="1194:1300" ph="..." />
-                <marker date="1519868250830" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
-                <marker date="1519868250830" expanded="true" signature="1413:1437" ph="{...}" />
+                <marker date="1519876324698" expanded="true" signature="606:654" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="606:1064" ph="{...}" />
+                <marker date="1519876324698" expanded="true" signature="713:1060" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="743:888" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="744:877" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="925:1049" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="926:1039" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
+                <marker date="1519876324698" expanded="true" signature="1159:1305" ph="{...}" />
+                <marker date="1519876324698" expanded="true" signature="1194:1300" ph="..." />
+                <marker date="1519876324698" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
+                <marker date="1519876324698" expanded="true" signature="1413:1437" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,15 +73,15 @@
         <entry file="file://$PROJECT_DIR$/src/controllers/JobStatusViewerController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
-                <marker date="1519868928306" expanded="true" signature="318:345" ph="..." />
-                <marker date="1519868928306" expanded="true" signature="1258:1284" ph="..." />
-                <marker date="1519868928306" expanded="true" signature="1258:1285" ph="..." />
-                <marker date="1519868928306" expanded="true" signature="1258:1293" ph="{...}" />
-                <marker date="1519868928306" expanded="true" signature="1258:1465" ph="{...}" />
-                <marker date="1519868928306" expanded="true" signature="1329:1463" ph="{...}" />
-                <marker date="1519868928306" expanded="true" signature="1378:1421" ph="..." />
+                <marker date="1519873438578" expanded="true" signature="318:345" ph="..." />
+                <marker date="1519873438578" expanded="true" signature="1324:1350" ph="..." />
+                <marker date="1519873438578" expanded="true" signature="1324:1351" ph="..." />
+                <marker date="1519873438578" expanded="true" signature="1324:1359" ph="{...}" />
+                <marker date="1519873438578" expanded="true" signature="1324:1531" ph="{...}" />
+                <marker date="1519873438578" expanded="true" signature="1395:1529" ph="{...}" />
+                <marker date="1519873438578" expanded="true" signature="1444:1487" ph="..." />
               </folding>
             </state>
           </provider>
@@ -375,7 +379,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-          <folding />
+          <folding>
+            <marker date="1519873085508" expanded="true" signature="4059:4077" ph="..." />
+            <marker date="1519873085508" expanded="true" signature="4059:4092" ph="..." />
+            <marker date="1519873085508" expanded="true" signature="4059:4103" ph="..." />
+            <marker date="1519873085508" expanded="true" signature="4059:4110" ph="..." />
+            <marker date="1519873085508" expanded="true" signature="4478:5358" ph="..." />
+            <marker date="1519873085508" expanded="true" signature="4514:5347" ph="{...}" />
+            <marker date="1519873085508" expanded="true" signature="4573:4639" ph="{...}" />
+            <marker date="1519873085508" expanded="true" signature="4676:5220" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
+            <marker date="1519873085508" expanded="true" signature="4802:4897" ph="{...}" />
+            <marker date="1519873085508" expanded="true" signature="4952:5119" ph="{...}" />
+            <marker date="1519873085508" expanded="true" signature="5283:5339" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -384,18 +400,18 @@
         <state relative-caret-position="15">
           <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
           <folding>
-            <marker date="1519868250830" expanded="true" signature="606:654" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="606:1064" ph="{...}" />
-            <marker date="1519868250830" expanded="true" signature="713:1060" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="743:888" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="744:877" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="925:1049" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="926:1039" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
-            <marker date="1519868250830" expanded="true" signature="1159:1305" ph="{...}" />
-            <marker date="1519868250830" expanded="true" signature="1194:1300" ph="..." />
-            <marker date="1519868250830" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
-            <marker date="1519868250830" expanded="true" signature="1413:1437" ph="{...}" />
+            <marker date="1519876324698" expanded="true" signature="606:654" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="606:1064" ph="{...}" />
+            <marker date="1519876324698" expanded="true" signature="713:1060" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="743:888" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="744:877" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="925:1049" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="926:1039" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
+            <marker date="1519876324698" expanded="true" signature="1159:1305" ph="{...}" />
+            <marker date="1519876324698" expanded="true" signature="1194:1300" ph="..." />
+            <marker date="1519876324698" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
+            <marker date="1519876324698" expanded="true" signature="1413:1437" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -411,15 +427,15 @@
     <entry file="file://$PROJECT_DIR$/src/controllers/JobStatusViewerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" column="55" lean-forward="false" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
-            <marker date="1519868928306" expanded="true" signature="318:345" ph="..." />
-            <marker date="1519868928306" expanded="true" signature="1258:1284" ph="..." />
-            <marker date="1519868928306" expanded="true" signature="1258:1285" ph="..." />
-            <marker date="1519868928306" expanded="true" signature="1258:1293" ph="{...}" />
-            <marker date="1519868928306" expanded="true" signature="1258:1465" ph="{...}" />
-            <marker date="1519868928306" expanded="true" signature="1329:1463" ph="{...}" />
-            <marker date="1519868928306" expanded="true" signature="1378:1421" ph="..." />
+            <marker date="1519873438578" expanded="true" signature="318:345" ph="..." />
+            <marker date="1519873438578" expanded="true" signature="1324:1350" ph="..." />
+            <marker date="1519873438578" expanded="true" signature="1324:1351" ph="..." />
+            <marker date="1519873438578" expanded="true" signature="1324:1359" ph="{...}" />
+            <marker date="1519873438578" expanded="true" signature="1324:1531" ph="{...}" />
+            <marker date="1519873438578" expanded="true" signature="1395:1529" ph="{...}" />
+            <marker date="1519873438578" expanded="true" signature="1444:1487" ph="..." />
           </folding>
         </state>
       </provider>

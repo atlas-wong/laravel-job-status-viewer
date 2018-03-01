@@ -35,6 +35,10 @@ class LaravelJobStatusViewerHelper
         } else {
             $job_statuses = JobStatus::orderBy('status', 'desc')->orderBy('updated_at', 'desc')->get()->toArray();
         }
+    
+        // TODO: customized ordering by status
+        $pa = ['failed' => 1, 'executing' => 2, 'queued' => 3, 'finished' => 4];
+        $custom_sort = true;
         
         return $job_statuses;
     }
