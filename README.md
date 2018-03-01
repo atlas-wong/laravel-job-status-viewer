@@ -67,5 +67,3 @@ $app->group(['namespace' => '\AtlasWong\LaravelJobStatusViewer'], function() use
 Troubleshooting
 ---------------
 
-If you got a `InvalidArgumentException in FileViewFinder.php` error, it may be a problem with config caching. Double check installation, then run `php artisan config:clear`.
-
