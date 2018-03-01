@@ -17,7 +17,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1519886651053" expanded="true" signature="15:95" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -28,17 +30,10 @@
             <state relative-caret-position="885">
               <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
               <folding>
-                <marker date="1519873085508" expanded="true" signature="4059:4077" ph="..." />
-                <marker date="1519873085508" expanded="true" signature="4059:4092" ph="..." />
-                <marker date="1519873085508" expanded="true" signature="4059:4103" ph="..." />
-                <marker date="1519873085508" expanded="true" signature="4059:4110" ph="..." />
-                <marker date="1519873085508" expanded="true" signature="4478:5358" ph="..." />
-                <marker date="1519873085508" expanded="true" signature="4514:5347" ph="{...}" />
-                <marker date="1519873085508" expanded="true" signature="4573:4639" ph="{...}" />
-                <marker date="1519873085508" expanded="true" signature="4676:5220" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
-                <marker date="1519873085508" expanded="true" signature="4802:4897" ph="{...}" />
-                <marker date="1519873085508" expanded="true" signature="4952:5119" ph="{...}" />
-                <marker date="1519873085508" expanded="true" signature="5283:5339" ph="{...}" />
+                <marker date="1519885786151" expanded="true" signature="4348:4361" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
+                <marker date="1519885786151" expanded="true" signature="4348:4488" ph="{...}" />
+                <marker date="1519885786151" expanded="true" signature="4348:4499" ph="..." />
+                <marker date="1519885786151" expanded="true" signature="4424:4480" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -50,18 +45,18 @@
             <state relative-caret-position="15">
               <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
               <folding>
-                <marker date="1519876324698" expanded="true" signature="606:654" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="606:1064" ph="{...}" />
-                <marker date="1519876324698" expanded="true" signature="713:1060" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="743:888" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="744:877" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="925:1049" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="926:1039" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
-                <marker date="1519876324698" expanded="true" signature="1159:1305" ph="{...}" />
-                <marker date="1519876324698" expanded="true" signature="1194:1300" ph="..." />
-                <marker date="1519876324698" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
-                <marker date="1519876324698" expanded="true" signature="1413:1437" ph="{...}" />
+                <marker date="1519868250830" expanded="true" signature="606:654" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="606:1064" ph="{...}" />
+                <marker date="1519868250830" expanded="true" signature="713:1060" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="743:888" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="744:877" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="925:1049" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="926:1039" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
+                <marker date="1519868250830" expanded="true" signature="1159:1305" ph="{...}" />
+                <marker date="1519868250830" expanded="true" signature="1194:1300" ph="..." />
+                <marker date="1519868250830" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
+                <marker date="1519868250830" expanded="true" signature="1413:1437" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -378,17 +373,10 @@
         <state relative-caret-position="885">
           <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
           <folding>
-            <marker date="1519873085508" expanded="true" signature="4059:4077" ph="..." />
-            <marker date="1519873085508" expanded="true" signature="4059:4092" ph="..." />
-            <marker date="1519873085508" expanded="true" signature="4059:4103" ph="..." />
-            <marker date="1519873085508" expanded="true" signature="4059:4110" ph="..." />
-            <marker date="1519873085508" expanded="true" signature="4478:5358" ph="..." />
-            <marker date="1519873085508" expanded="true" signature="4514:5347" ph="{...}" />
-            <marker date="1519873085508" expanded="true" signature="4573:4639" ph="{...}" />
-            <marker date="1519873085508" expanded="true" signature="4676:5220" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
-            <marker date="1519873085508" expanded="true" signature="4802:4897" ph="{...}" />
-            <marker date="1519873085508" expanded="true" signature="4952:5119" ph="{...}" />
-            <marker date="1519873085508" expanded="true" signature="5283:5339" ph="{...}" />
+            <marker date="1519885786151" expanded="true" signature="4348:4361" ph="{&quot;searchDelay&quot;: &quot;{{empty($config['seach_delay'])?500:$config['seach_delay']}}&quot;...}" />
+            <marker date="1519885786151" expanded="true" signature="4348:4488" ph="{...}" />
+            <marker date="1519885786151" expanded="true" signature="4348:4499" ph="..." />
+            <marker date="1519885786151" expanded="true" signature="4424:4480" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -398,18 +386,18 @@
         <state relative-caret-position="15">
           <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
           <folding>
-            <marker date="1519876324698" expanded="true" signature="606:654" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="606:1064" ph="{...}" />
-            <marker date="1519876324698" expanded="true" signature="713:1060" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="743:888" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="744:877" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="925:1049" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="926:1039" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
-            <marker date="1519876324698" expanded="true" signature="1159:1305" ph="{...}" />
-            <marker date="1519876324698" expanded="true" signature="1194:1300" ph="..." />
-            <marker date="1519876324698" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
-            <marker date="1519876324698" expanded="true" signature="1413:1437" ph="{...}" />
+            <marker date="1519868250830" expanded="true" signature="606:654" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="606:1064" ph="{...}" />
+            <marker date="1519868250830" expanded="true" signature="713:1060" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="743:888" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="744:877" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="925:1049" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="926:1039" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="1070:1129" ph=" Register the service provider. ..." />
+            <marker date="1519868250830" expanded="true" signature="1159:1305" ph="{...}" />
+            <marker date="1519868250830" expanded="true" signature="1194:1300" ph="..." />
+            <marker date="1519868250830" expanded="true" signature="1311:1383" ph=" Get the services provided by the provider. ..." />
+            <marker date="1519868250830" expanded="true" signature="1413:1437" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -418,7 +406,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1519886651053" expanded="true" signature="15:95" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
