@@ -83,7 +83,7 @@ class LaravelJobStatusViewerHelper
         // create new job instance
         // dispatch with params
         if (class_exists($class)) {
-            dispatch(new $class($input));
+            dispatch(new $class(json_decode($input, true)));
             $entity->status = 'finished';
             $entity->save();
         } else {
